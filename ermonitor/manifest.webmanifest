@@ -1,0 +1,39 @@
+{
+  "id": "./",
+  "name": "ERMonitor Control Room",
+  "short_name": "ERMonitor",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#05070c",
+  "theme_color": "#05070c",
+  "description": "ERMonitor infrastructure monitoring control room",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "./assets/img/ermonitor-logo.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "id",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "url": "./admin/dashboard.php"
+    },
+    {
+      "name": "Profile",
+      "short_name": "Profile",
+      "url": "./profile.php"
+    }
+  ]
+}

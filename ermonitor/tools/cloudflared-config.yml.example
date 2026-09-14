@@ -1,0 +1,9 @@
+# ERMonitor Cloudflare Tunnel example
+# Replace the placeholders; NEVER commit real credentials to the web root.
+tunnel: YOUR-TUNNEL-UUID
+credentials-file: C:\Users\YOUR-WINDOWS-USER\.cloudflared\YOUR-TUNNEL-UUID.json
+
+ingress:
+  - hostname: monitor.example.com
+    service: http://127.0.0.1:80
+  - service: http_status:404
