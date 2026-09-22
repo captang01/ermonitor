@@ -1,25 +1,25 @@
-ERMonitor - System & Server Monitoring Tool
-ERMonitor adalah aplikasi pemantauan server dan sistem berbasis web yang dirancang untuk memantau performa server, mendeteksi gangguan secara real-time, memberikan notifikasi peringatan (alerts), serta menyediakan laporan log dan audit sistem secara komprehensif.
+# 🚀 ERMonitor - System & Server Monitoring Tool
 
-🚀 Fitur Utama
-Dashboard Interaktif: Menampilkan ringkasan status server, performa sistem, dan indikator kesehatan secara real-time.
+**ERMonitor** adalah aplikasi pemantauan server dan sistem berbasis web yang dirancang untuk memantau performa server, mendeteksi gangguan secara *real-time*, memberikan notifikasi peringatan (*alerts*), serta menyediakan laporan log dan audit sistem secara komprehensif.
 
-Manajemen Server: Tambah, edit, hapus, dan kelola daftar server yang dipantau dengan mudah.
+---
 
-Sistem Notifikasi & Alerting: Memantau batasan ambang batas (thresholds) dan memicu peringatan jika terjadi kegagalan atau gangguan pada server.
+## 🌟 Fitur Utama
 
-REST API Lengkap: Menyediakan endpoint API untuk health check, statistik, pemantauan (monitoring), alerts, dan servers.
+* **Dashboard Interaktif**: Menampilkan ringkasan status server, performa sistem, dan indikator kesehatan secara *real-time*.
+* **Manajemen Server**: Tambah, edit, hapus, dan kelola daftar server yang dipantau dengan mudah.
+* **Sistem Notifikasi & Alerting**: Memantau batasan ambang batas (*thresholds*) dan memicu peringatan jika terjadi kegagalan atau gangguan pada server.
+* **REST API Lengkap**: Menyediakan endpoint API untuk *health check*, statistik, pemantauan (*monitoring*), *alerts*, dan *servers*.
+* **Manajemen Pengguna & Autentikasi**: Fitur pendaftaran, *login*, *logout*, *session management*, dan pengaturan hak akses pengguna.
+* **Audit & Logging**: Pencatatan riwayat aktivitas pengguna dan perubahan sistem secara detail melalui fitur audit log.
+* **Progressive Web App (PWA)**: Dilengkapi dengan file `manifest.webmanifest` dan *service worker* (`sw.js`) untuk akses cepat dan pengalaman layaknya aplikasi native.
+* **Perkakas & Alat Bantu (Tools)**: Script pendukung untuk *setup* LAN, diagnostik jaringan, pengujian HTTPS/Cloudflare, verifikasi upgrade, serta *backup* database otomatis.
 
-Manajemen Pengguna & Autentikasi: Fitur register, login, logout, session management, dan manajemen hak akses pengguna (admin/users).
+---
 
-Audit & Logging: Pencatatan riwayat aktivitas pengguna dan perubahan sistem secara detail melalui fitur audit log.
+## 📁 Struktur Direktori
 
-Progressive Web App (PWA): Dilengkapi dengan file manifest.webmanifest dan service worker (sw.js) untuk akses cepat dan pengalaman layaknya aplikasi native.
-
-Perkakas & Alat Bantu (Tools): Script pendukung untuk setup LAN, diagnostik jaringan, pengujian HTTPS/Cloudflare, verifikasi upgrade, serta backup database otomatis.
-
-📁 Struktur Direktori
-Plaintext
+```text
 ermonitor/
 ├── admin/                     # Modul Administrasi
 │   ├── alerts.php             # Kelola peringatan
@@ -75,10 +75,11 @@ ermonitor/
 ├── login.php / register.php   # Akses Gerbang Pengguna
 ├── manifest.webmanifest / sw.js # PWA Configuration
 └── README.md                  # Dokumentasi Proyek
+
 🛠️ Persyaratan Sistem
 Web Server: Apache / Nginx
 
-PHP: Versi 7.4 atau versi di atasnya (dengan ekstensi pdo_mysql, json, curl aktif)
+PHP: Versi 7.4 atau lebih baru (dengan ekstensi pdo_mysql, json, curl aktif)
 
 Database: MySQL / MariaDB
 
@@ -88,17 +89,17 @@ OS: Windows / Linux / macOS
 Clone Repository
 
 Bash
-git clone https://github.com/username/ermonitor.git
+git clone [https://github.com/username/ermonitor.git](https://github.com/username/ermonitor.git)
 cd ermonitor
 Konfigurasi Database
 
-Buat database baru di MySQL/MariaDB (contoh: ermonitor_db).
+Buat database baru di MySQL/MariaDB (misal: ermonitor_db).
 
 Impor skema dasar database dari direktori database/schema.sql:
 
 Bash
 mysql -u root -p ermonitor_db < database/schema.sql
-Jika Anda memperbarui versi, jalankan skrip migrasi tambahan seperti database/upgrade_step7.sql.
+Jika melakukan pembaruan versi, jalankan skrip migrasi tambahan seperti database/upgrade_step7.sql.
 
 Atur Konfigurasi Aplikasi
 
@@ -110,9 +111,9 @@ Konfigurasi Web Server
 
 Arahkan Document Root web server Anda ke folder ermonitor/ atau letakkan direktori ermonitor/ di dalam folder htdocs / www.
 
-Pastikan file .htaccess aktif jika menggunakan Apache untuk mendukung pengarahan URL.
+Pastikan file .htaccess aktif jika menggunakan Apache.
 
-🔧 Penggunaan Tools Otomasi (Windows)
+🔧 Tools & Otomasi (Windows)
 Di dalam folder tools/, tersedia berbagai skrip utilitas untuk mempermudah operasional:
 
 Penyetelan Jaringan: Jalankan setup-lan.bat atau diagnose-lan.bat untuk mengonfigurasi dan mendiagnosis akses aplikasi via jaringan lokal (LAN).
